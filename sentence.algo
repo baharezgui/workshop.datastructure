@@ -1,0 +1,31 @@
+ALGORITHM sentence
+VAR
+    length-sentence:INTEGER:=0;
+    number-words:INTEGER:=0;
+    number-vowels:INTEGER:=0;
+    i:INTEGER;
+    w-sentence:STRING;
+BEGIN
+    Write("enter your sentence");
+    Read(w-sentence);
+    WHILE (w-sentence[w-sentence.lenght-1]<>".") DO
+        Write("your senctence must end with a point");
+        Read(w-senctence;)
+    END_WHILE
+    /*REPEAT
+        Write("enter a sentence that ends with a point");
+        Read(w-sentence);
+    UNTIL (w-sentence[w-sentence.lenght-1]=".")*/
+    FOR i FROM 0 TO w-senctence.lenght-1 STEP 1  DO
+        IF(w-sentence[i]=" ") THEN
+            number-words:=number-words+1;
+        END_IF
+        IF (w-sentence[i]="a" or "i" or "e" or "u" or "y" or "o") THEN
+            number-vowels:=number-vowels+1;
+        END_IF
+    END_FOR
+    write(length-sentence);
+    write(number-words);
+    Write(number-vowels);
+
+END
